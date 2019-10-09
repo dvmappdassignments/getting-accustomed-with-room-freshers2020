@@ -1,1 +1,1 @@
-The apk of the app is titiled AcadCourses.apk
+The apk of the app is titled AcadCourses.apk
