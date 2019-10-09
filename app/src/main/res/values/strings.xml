@@ -1,0 +1,8 @@
+<resources>
+  <string name="category_name">Student Name</string>
+  <string name="item_description">Course Description</string>
+  <string name="item_priority">Course Number</string>
+  <string name="ok">Okay</string>
+  <string name="cancel">Cancel</string>
+  <string name="title_activity_list_items">ListItemsActivity</string>
+</resources>
