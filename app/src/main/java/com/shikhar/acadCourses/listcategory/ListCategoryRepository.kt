@@ -3,7 +3,7 @@ package com.shikhar.acadCourses.listcategory
 
 import android.arch.lifecycle.LiveData
 import android.os.AsyncTask
-import com.shikhar.acadCourses.ListMasterApplication
+import com.shikhar.acadCourses.AcadCoursesApplication
 
 class ListCategoryRepository {
 
@@ -11,7 +11,7 @@ class ListCategoryRepository {
   val listCategories: LiveData<List<ListCategory>>
 
   init {
-    val database = ListMasterApplication.database
+    val database = AcadCoursesApplication.database
     listCategoryDao = database!!.listCategoryDao()
     listCategories = listCategoryDao.getAll()
   }

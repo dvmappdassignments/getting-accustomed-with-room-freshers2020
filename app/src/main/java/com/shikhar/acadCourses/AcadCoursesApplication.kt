@@ -5,7 +5,7 @@ package com.shikhar.acadCourses
 import android.app.Application
 import android.arch.persistence.room.Room
 
-class ListMasterApplication : Application() {
+class AcadCoursesApplication : Application() {
 
   companion object {
     var database: AppDatabase? = null

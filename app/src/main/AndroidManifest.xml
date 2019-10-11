@@ -3,7 +3,7 @@
     package="com.shikhar.acadCourses">
 
     <application
-        android:name="com.shikhar.acadCourses.ListMasterApplication"
+        android:name="com.shikhar.acadCourses.AcadCoursesApplication"
         android:allowBackup="true"
         android:label="Acad Courses"
         android:supportsRtl="true"
