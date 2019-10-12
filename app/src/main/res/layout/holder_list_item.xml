@@ -21,7 +21,7 @@
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
       android:gravity="center"
-      android:text="@{listItemViewModel.priority}"
+      android:text="@{listItemViewModel.courseNumber}"
       android:textAlignment="center"
       android:textColor="@color/listItemsTextColor"
       android:textSize="20sp"

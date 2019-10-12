@@ -18,7 +18,7 @@ import com.shikhar.acadCourses.listcategory.ListCategory
         onDelete = CASCADE)],
     indices = [Index(value = "list_category_id", name = "index_list_category_id")])
 data class ListItem(@ColumnInfo(name = "item_description") var itemDescription: String,
-                    @ColumnInfo(name = "item_ID") var itemID: Int,
+                    @ColumnInfo(name = "item_ID") var itemID: String,
                     @ColumnInfo(name = "list_category_id") var listCategoryId: Long,
                     @ColumnInfo(name = "id") @PrimaryKey(autoGenerate = true)
                     var id: Long = 0)

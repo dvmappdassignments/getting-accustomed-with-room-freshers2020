@@ -53,10 +53,10 @@ class ListItemsActivity : AppCompatActivity() {
     activityListItemsBinding.fab.setOnClickListener {
 
       // Setup the dialog
-      val alertDialogBuilder = AlertDialog.Builder(this).setTitle("Title")
+      val alertDialogBuilder = AlertDialog.Builder(this).setTitle("Name")
       val dialogAddItemBinding = DialogAddItemBinding.inflate(layoutInflater)
       // 1
-      val listItemViewModel = ListItemViewModel(ListItem("", 0, listCategory.id))
+      val listItemViewModel = ListItemViewModel(ListItem("", "", listCategory.id))
       dialogAddItemBinding.listItemViewModel = listItemViewModel
 
       alertDialogBuilder.setView(dialogAddItemBinding.root)

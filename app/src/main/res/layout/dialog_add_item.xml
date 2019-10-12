@@ -55,8 +55,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/item_priority"
         android:imeOptions="actionDone"
-        android:inputType="number"
-        android:text="@={listItemViewModel.priority}" />
+        android:inputType="text"
+        android:text="@={listItemViewModel.courseNumber}" />
 
     </android.support.design.widget.TextInputLayout>
 

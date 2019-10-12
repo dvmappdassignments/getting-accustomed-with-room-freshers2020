@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 3,
-    "identityHash": "77ffc9627013fd1e782266017699b246",
+    "identityHash": "4943a2f4ae3cea3c30e86770a15ad0d7",
     "entities": [
       {
         "tableName": "list_categories",
@@ -32,7 +32,7 @@
       },
       {
         "tableName": "list_items",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`item_description` TEXT NOT NULL, `item_ID` INTEGER NOT NULL, `list_category_id` INTEGER NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, FOREIGN KEY(`list_category_id`) REFERENCES `list_categories`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`item_description` TEXT NOT NULL, `item_ID` TEXT NOT NULL, `list_category_id` INTEGER NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, FOREIGN KEY(`list_category_id`) REFERENCES `list_categories`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
         "fields": [
           {
             "fieldPath": "itemDescription",
@@ -43,7 +43,7 @@
           {
             "fieldPath": "itemID",
             "columnName": "item_ID",
-            "affinity": "INTEGER",
+            "affinity": "TEXT",
             "notNull": true
           },
           {
@@ -92,7 +92,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"77ffc9627013fd1e782266017699b246\")"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"4943a2f4ae3cea3c30e86770a15ad0d7\")"
     ]
   }
 }
