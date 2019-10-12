@@ -14,6 +14,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            android:launchMode = "singleTop"
         </activity>
         <activity
             android:name="com.shikhar.acadCourses.listitem.ListItemsActivity"

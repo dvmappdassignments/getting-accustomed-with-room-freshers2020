@@ -44,7 +44,7 @@ class ListCategoriesActivity : AppCompatActivity() {
 
       // Set up the dialog
       val alertDialogBuilder = AlertDialog.Builder(this)
-      alertDialogBuilder.setTitle("Title")
+      alertDialogBuilder.setTitle("ADD NAME")
       val dialogAddCategoryBinding = DialogAddCategoryBinding.inflate(layoutInflater)
 
       alertDialogBuilder.setView(dialogAddCategoryBinding.root)
